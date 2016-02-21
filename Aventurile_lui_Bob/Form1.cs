@@ -24,8 +24,8 @@ namespace Aventurile_lui_Bob
         Bitmap exit;
         Point boblocation = Point.Empty;
         Point exitlocation = Point.Empty;
-        int offSet = 0, vit;
-        int acc_secunde, acc_secunde_max = 15;
+        float offSet = 0, vit;
+        int acc_secunde, acc_secunde_max = 30;
         bool left = false, right = false;
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,7 +40,7 @@ namespace Aventurile_lui_Bob
                 {
                     for (int i = 0; i < imageNumber; i++)
                     {
-                        graph.DrawImage(back, offSet % back.Width + i * back.Width - back.Width, 0);
+                        graph.DrawImage(back, offSet/2 % back.Width + i * back.Width - back.Width, 0);
                     }
                     graph.DrawImage(bobimage, boblocation);
                     graph.DrawImage(exit,exitlocation);
@@ -138,7 +138,7 @@ namespace Aventurile_lui_Bob
         private void acceleratie_Tick(object sender, EventArgs e)
         { 
             if(acc_secunde< acc_secunde_max)
-                acc_secunde++;
+                acc_secunde+=2;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)

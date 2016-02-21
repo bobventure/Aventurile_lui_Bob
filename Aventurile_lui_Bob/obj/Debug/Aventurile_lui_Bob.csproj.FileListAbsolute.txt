@@ -1,0 +1,36 @@
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe.config
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.pdb
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csprojResolveAssemblyReference.cache
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Form1.resources
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Properties.Resources.resources
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csproj.GenerateResource.Cache
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.exe
+F:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.pdb
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe.config
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.exe
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.pdb
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.pdb
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csprojResolveAssemblyReference.cache
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Form1.resources
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Properties.Resources.resources
+E:\An_2015-2016\C#\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csproj.GenerateResource.Cache
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe.config
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.exe
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.pdb
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.pdb
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csprojResolveAssemblyReference.cache
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Form1.resources
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Properties.Resources.resources
+D:\VS_Projects\Aventurile-lui-Bob\Aventurile lui Bob\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csproj.GenerateResource.Cache
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe.config
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.exe
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.pdb
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.exe
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\bin\Debug\Aventurile_lui_Bob.pdb
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csprojResolveAssemblyReference.cache
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Form1.resources
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.Properties.Resources.resources
+D:\VS_Projects\Aventurile_lui_Bob\Aventurile_lui_Bob\obj\Debug\Aventurile_lui_Bob.csproj.GenerateResource.Cache

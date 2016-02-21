@@ -39,20 +39,19 @@
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1867, 1338);
+            this.panel1.Size = new System.Drawing.Size(800, 600);
             this.panel1.TabIndex = 1;
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // timer1
             // 
-            this.timer1.Interval = 1;
+            this.timer1.Interval = 16;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // acceleratie
             // 
-            this.acceleratie.Interval = 1;
+            this.acceleratie.Interval = 16;
             this.acceleratie.Tick += new System.EventHandler(this.acceleratie_Tick);
             // 
             // deacceleratie
@@ -62,12 +61,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1867, 1338);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

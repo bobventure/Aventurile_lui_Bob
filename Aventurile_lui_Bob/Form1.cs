@@ -55,7 +55,7 @@ namespace Aventurile_lui_Bob
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            this.WindowState = FormWindowState.Maximized;
+
             back = Properties.Resources.back;
             bobleft = Properties.Resources.bobleft;
             bobright = Properties.Resources.bobright;
@@ -69,19 +69,19 @@ namespace Aventurile_lui_Bob
         {
             
             boblocation.X = panel1.Width / 2 - bobimage.Width / 2;
-            boblocation.Y = 210;
+            boblocation.Y = 510;
             exitlocation.X = panel1.Width - exit.Width - 10;
             exitlocation.Y = 5;
             
             if (left)
             {
-                offSet = offSet + acc_secunde;
+                offSet = offSet + 3 + acc_secunde;
                 bobimage = bobleft;
             }
             if(right)
             {
                 bobimage = bobright;
-                offSet = offSet - acc_secunde;
+                offSet = offSet - 3 - acc_secunde;
             }
             Game();
         }
@@ -92,11 +92,13 @@ namespace Aventurile_lui_Bob
             if(e.KeyCode == Keys.Left)
             {
                 acceleratie.Start();
+                right = false;
                 left = true;
             }
             if(e.KeyCode == Keys.Right)
             {
                 acceleratie.Start();
+                left = false;
                 right = true;
             }
         }
@@ -106,13 +108,20 @@ namespace Aventurile_lui_Bob
             if(e.KeyCode == Keys.Left)
             {
                 acceleratie.Stop();
-                deacceleratie.Start();
+                if (left == true)
+                {
+                    
+                    deacceleratie.Start();
+                }
             }
             if(e.KeyCode == Keys.Right)
             {
-                
                 acceleratie.Stop();
-                deacceleratie.Start();
+                if (right == true)
+                {
+                    
+                    deacceleratie.Start();
+                }
             }
         }
 
@@ -123,7 +132,7 @@ namespace Aventurile_lui_Bob
         private void deacceleratie_Tick(object sender, EventArgs e)
         {
             if(acc_secunde > 0)
-                acc_secunde = acc_secunde - acc_secunde_max / 3;
+                acc_secunde = 3 + acc_secunde - acc_secunde_max / 3;
             if (acc_secunde <= 0)
             {
                 deacceleratie.Stop();
@@ -138,7 +147,7 @@ namespace Aventurile_lui_Bob
         private void acceleratie_Tick(object sender, EventArgs e)
         { 
             if(acc_secunde< acc_secunde_max)
-                acc_secunde+=2;
+                acc_secunde++;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)

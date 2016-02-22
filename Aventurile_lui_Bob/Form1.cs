@@ -24,9 +24,10 @@ namespace Aventurile_lui_Bob
         Bitmap exit;
         Point boblocation = Point.Empty;
         Point exitlocation = Point.Empty;
-        float offSet = 0, vit;
-        int acc_secunde, acc_secunde_max = 30;
-        bool left = false, right = false;
+        Point Boborigin = Point.Empty;
+        float offSet = 0, vitX=0,vitY=0;
+        int G=10;
+        bool left = false, right = false, jump=false;        
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -64,7 +65,17 @@ namespace Aventurile_lui_Bob
             timer1.Start();
 
          }
-        
+        public void corectare()
+        {
+            if (vitX > 0)
+                vitX--;
+            if (vitX < 0)
+                vitX++;
+            if(vitY>G)
+                vitY-=G;
+            if (vitY > Boborigin.Y)
+                vitY--;
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             
@@ -72,32 +83,52 @@ namespace Aventurile_lui_Bob
             boblocation.Y = 510;
             exitlocation.X = panel1.Width - exit.Width - 10;
             exitlocation.Y = 5;
-            
-            if (left)
+            Boborigin.X = 0;
+            Boborigin.Y = 510;
+            boblocation.Y = boblocation.Y + Convert.ToInt32(vitY);
+            offSet = offSet + vitX;
+            corectare();
+            if(left)
             {
-                offSet = offSet + 3 + acc_secunde;
                 bobimage = bobleft;
+                vitX+=2;
             }
             if(right)
             {
                 bobimage = bobright;
-                offSet = offSet - 3 - acc_secunde;
+                vitX -= 2;
+            }
+            if(jump)
+            {
+                vitY = -100;
             }
             Game();
+            
+        }
+        public int grounded()
+        {
+            if (boblocation.Y == Boborigin.Y)
+                return 1;
+            return 0;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (jump != true && grounded()==1)
+            {
+                if (e.KeyCode == Keys.Space)
+                {
+                    jump = true;
+                }
 
+            }
             if(e.KeyCode == Keys.Left)
             {
-                acceleratie.Start();
                 right = false;
                 left = true;
             }
             if(e.KeyCode == Keys.Right)
             {
-                acceleratie.Start();
                 left = false;
                 right = true;
             }
@@ -105,49 +136,31 @@ namespace Aventurile_lui_Bob
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
+                if (e.KeyCode == Keys.Space)
+                {
+                    if(jump==true)
+                        jump = false;
+
+                }
             if(e.KeyCode == Keys.Left)
             {
-                acceleratie.Stop();
                 if (left == true)
                 {
-                    
-                    deacceleratie.Start();
+                    left = false;
                 }
             }
             if(e.KeyCode == Keys.Right)
             {
-                acceleratie.Stop();
                 if (right == true)
                 {
-                    
-                    deacceleratie.Start();
+                    right = false;
+
                 }
             }
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-        }
-
-        private void deacceleratie_Tick(object sender, EventArgs e)
-        {
-            if(acc_secunde > 0)
-                acc_secunde = 3 + acc_secunde - acc_secunde_max / 3;
-            if (acc_secunde <= 0)
-            {
-                deacceleratie.Stop();
-                if (right == true)
-                    right = false;
-                if (left == true)
-                    left = false;
-                acc_secunde = 0;
-            }
-        }
-
-        private void acceleratie_Tick(object sender, EventArgs e)
-        { 
-            if(acc_secunde< acc_secunde_max)
-                acc_secunde++;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -159,6 +172,11 @@ namespace Aventurile_lui_Bob
             Point mousePt = new Point(e.X, e.Y);
             if (mousePt.X > panel1.Width - exit.Width - 10 && mousePt.X < panel1.Width - 10 && mousePt.Y > panel1.Top + 10 && mousePt.Y < panel1.Top + 10 + exit.Height)
                 Application.Exit();
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
         }
     }
 }
